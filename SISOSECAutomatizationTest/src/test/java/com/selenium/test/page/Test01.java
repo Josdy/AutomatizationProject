@@ -22,6 +22,8 @@ public class Test01 extends BaseConfig
     
     
     //driver.findElement(By.xpath("//table/tbody/tr/td[1]/img")).click();
+    
+    //ACCESS TO MENU NAV TREE
     driver.findElement(By.id("web_MenuNavTree_0_valueCell6")).click();
     driver.findElement(By.xpath("//table/tbody/tr/td[2]/img")).click();
     driver.findElement(By.id("web_MenuNavTree_0_valueCell6")).click();
