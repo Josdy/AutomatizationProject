@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.selenium.test.HSM1"/><class name="com.selenium.test.HSM2"></class>
+    	<class name="com.selenium.test.Installation1"></class>
+    	<class name="com.selenium.test.InstallationProperties1"></class>
+    	<class name="com.selenium.test.KeyType1"></class>
+    	<class name="com.selenium.test.KeyType2"></class>
+    	<class name="com.selenium.test.Terminal1"></class>
+    	<class name="com.selenium.test.Terminal2"></class>
+    	<class name="com.selenium.test.TerminalType1"></class>
+    	<class name="com.selenium.test.TerminalType2"></class>
+    	<class name="com.selenium.test.KeyTypeTestError"></class></classes></test> <!-- Test -->
+</suite> <!-- Suite -->

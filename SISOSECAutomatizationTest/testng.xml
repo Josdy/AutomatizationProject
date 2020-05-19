@@ -3,6 +3,5 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.selenium.test.Test01"/>
-      <class name="com.selenium.test.Test02"></class></classes></test> <!-- Test -->
+      <class name="com.selenium.test.Emisor1"></class></classes></test> <!-- Test -->
 </suite> <!-- Suite -->
