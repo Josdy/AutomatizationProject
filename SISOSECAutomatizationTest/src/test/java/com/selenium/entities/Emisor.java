@@ -1,14 +1,14 @@
 package com.selenium.entities;
 
 import java.util.List;
-import java.util.stream.Stream;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.SendKeysAction;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -97,7 +97,6 @@ public class Emisor {
 		//driver.findElement(By.xpath("//td/div[contains(., 'Eliminar')]")).click();
 		List<WebElement> btn = driver.findElements(By.className("menuTitleField"));
 		action.moveToElement(btn.get(1)).click().perform();
-		help.wait(20);
 		help.wait(2);
 		driver.findElement(By.xpath("//td[contains(text(), 'Aceptar')]")).click();
 		driver.findElement(By.xpath("//tbody/tr/td/table/tbody/tr/td[2]/img")).click();
