@@ -9,7 +9,7 @@ import com.selenium.entities.*;
 import com.selenium.helpers.Helpers;
 import com.selenium.page.HomePage;
 
-public class Emisor1 extends BaseConfig {
+public class Emisor2 extends BaseConfig {
 
 	@Test
   public void example02() {
@@ -25,9 +25,11 @@ public class Emisor1 extends BaseConfig {
 		driver.findElement(By.className("hSplitbar")).click();
 		driver.findElement(By.xpath("//div[contains(text(), 'Filtrar')]")).click();
 		Emisor tt = new Emisor(driver);
-		tt.createEmisor(driver, "12345900", "QA Test", "6", "16", "4", "4", "16");	
-		//tt.fixEmisor(driver, "VISA Test");
-		tt.editEmisor(driver, "12345900");
-		//tt.deleteEmisor(driver, "12345900");
+		//tt.createEmisor(driver, "12345900", "QA Test", "6", "16", "4", "4", "16");	
+	
+		//tt.editEmisor(driver, "12345900");
+		
+		tt.fixEmisor(driver, "VISA Test");
+		tt.deleteEmisor(driver, "12345900");
   }
 }

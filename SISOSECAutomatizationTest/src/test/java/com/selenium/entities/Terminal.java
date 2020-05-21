@@ -100,7 +100,7 @@ public class Terminal {
 
 		help.wait(2);
 		driver.findElement(By.xpath("//td[contains(text(), 'Aceptar')]")).click();
-		driver.findElement(By.xpath("//tbody/tr/td/table/tbody/tr/td[2]/img")).click();
+		//driver.findElement(By.xpath("//tbody/tr/td/table/tbody/tr/td[2]/img")).click();
 		help.wait(4);
 
 	}

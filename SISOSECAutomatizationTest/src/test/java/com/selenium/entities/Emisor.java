@@ -63,7 +63,7 @@ public class Emisor {
 		action.contextClick(elementLocator).perform();
 		help.wait(3);
 		driver.findElement(By.xpath("//div[contains(text(), 'Corregir')]")).click();
-		help.wait(2);
+		help.wait(4);
 
 	}
 
@@ -81,7 +81,7 @@ public class Emisor {
 		Actions actions = new Actions(driver);
 		List<WebElement> btn = driver.findElements(By.className("buttonRounded"));
 		actions.moveToElement(btn.get(3)).click().perform();
-		help.wait(20);
+		help.wait(4);
 
 	}
 
@@ -94,9 +94,12 @@ public class Emisor {
 		Actions action = new Actions(driver);
 		WebElement elementLocator = driver.findElement(By.xpath("//div[contains(text(), '" + desc + "')]"));
 		action.contextClick(elementLocator).perform();
-		//driver.findElement(By.xpath("//td/div[contains(., 'Eliminar')]")).click();
+		driver.findElement(By.xpath("//div[contains(., 'Eliminar')]")).click();
+		
+		/*
 		List<WebElement> btn = driver.findElements(By.className("menuTitleField"));
-		action.moveToElement(btn.get(1)).click().perform();
+		action.moveToElement(btn.get(2)).click().perform();
+		*/
 		help.wait(2);
 		driver.findElement(By.xpath("//td[contains(text(), 'Aceptar')]")).click();
 		driver.findElement(By.xpath("//tbody/tr/td/table/tbody/tr/td[2]/img")).click();
